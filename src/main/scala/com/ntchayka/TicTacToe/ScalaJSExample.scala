@@ -6,6 +6,7 @@ import js.annotation.JSExport
 
 @JSExport
 object ScalaJSExample {
+
   @JSExport
   def main(): Unit = {
     val paragraph = g.document.createElement("p")

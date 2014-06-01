@@ -1,25 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Example Scala.js application</title>
+  <title>ScalaJS Tic Tac Toe</title>
+  <link rel="stylesheet" href="ttt.css" type="text/css" />
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 </head>
 <body>
-
-<h1>Example Scala.js application - optimized version</h1>
-
-<p>After having compiled and optimized properly the code for the application
-(using `sbt optimizeJS`), you should see "It works" herebelow.
-See README.md for detailed explanations.</p>
-
-<div id="playground">
-</div>
-
 <script type="text/javascript" src="./target/scala-2.11/example-opt.js"></script>
+  <h1>ScalaJS Tic Tac Toe</h1>
+  <br/>
+  <div id="box">
+    <canvas id="canvas00" width="100" height="100" style="border:1px solid black" 
+    onclick="ScalaJSTicTacToe().canvasClicked(0,0)">
+    </canvas>
 
-<script type="text/javascript">
-ScalaJSExample().main();
-</script>
+    <canvas id="canvas01" width="100" height="100" style="border:1px solid black" 
+    onclick="ScalaJSTicTacToe().canvasClicked(0,1)">
+    </canvas>
+
+    <canvas id="canvas02" width="100" height="100" style="border:1px solid black" 
+    onclick="ScalaJSTicTacToe().canvasClicked(0,2)">
+    </canvas>
+    <br/>
+
+    <canvas id="canvas10" width="100" height="100" style="border:1px solid black" 
+    onclick="ScalaJSTicTacToe().canvasClicked(1,0)">
+    </canvas>
+
+    <canvas id="canvas11" width="100" height="100" style="border:1px solid black" 
+    onclick="ScalaJSTicTacToe().canvasClicked(1,1)">
+    </canvas>
+
+    <canvas id="canvas12" width="100" height="100" style="border:1px solid black" 
+    onclick="ScalaJSTicTacToe().canvasClicked(1,2)">
+    </canvas>
+    <br/>
+
+    <canvas id="canvas20" width="100" height="100" style="border:1px solid black" 
+    onclick="ScalaJSTicTacToe().canvasClicked(2,0)">
+    </canvas>
+
+    <canvas id="canvas21" width="100" height="100" style="border:1px solid black" 
+    onclick="ScalaJSTicTacToe().canvasClicked(2,1)">
+    </canvas>
+
+    <canvas id="canvas22" width="100" height="100" style="border:1px solid black" 
+    onclick="ScalaJSTicTacToe().canvasClicked(2,2)">
+    </canvas>
+
+  </div>
+
 
 </body>
 </html>
