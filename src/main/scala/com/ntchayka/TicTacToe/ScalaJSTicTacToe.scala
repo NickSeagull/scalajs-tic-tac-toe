@@ -45,7 +45,10 @@ object ScalaJSTicTacToe {
   }
 
   def checkForWinners{
-    if(state.finishedGame) g.alert(state.whoWon)
+    if(state.finishedGame){
+      g.alert(state.whoWon)
+      g.location.reload()
+    }
   }
 
 }
